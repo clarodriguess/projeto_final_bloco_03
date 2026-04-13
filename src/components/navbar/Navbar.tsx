@@ -1,6 +1,7 @@
 import { ShoppingCartIcon } from "@phosphor-icons/react"
 import { UserIcon } from "@phosphor-icons/react/dist/icons/User"
 import { Link } from "react-router-dom"
+import SearchForm from "./SearchForm"
 
 
 function Navbar() {
@@ -16,6 +17,10 @@ function Navbar() {
                             className="w-35"
                         />
                     </Link>
+                    
+                    <div className="relative flex items-center justify-center w-2/5 text-black max-md:hidden">
+                        <SearchForm />
+                    </div>
                     
                     <div className='items-center hidden gap-4 py-4 md:flex font-light '>
                         
