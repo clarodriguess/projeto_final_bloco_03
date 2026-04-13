@@ -3,7 +3,7 @@
 function Home() {
   return (
      <>
-            <div className="bg-indigo-900 flex justify-center h-[70vh]">
+            <div className="bg-indigo-900 flex justify-center h-[90vh] pt-30">
                 <div className='container grid grid-cols-1 md:grid-cols-2 text-white'>
 
                     
