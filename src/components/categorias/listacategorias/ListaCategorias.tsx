@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import type Categoria from "../../../models/Categoria"
 import { buscar } from "../../../services/Service"
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { SyncLoader } from "react-spinners";
 import CardCategorias from "../cardcategorias/CardCategorias";
 
@@ -54,6 +54,13 @@ function ListaCategorias() {
                     </div>
                 </div>
             </div>
+
+           
+
+            <Link to='/cadastrarcategoria' 
+            className='bg-sky-950 font-semibold w-70 p-3 text-center mx-auto rounded-md border border-gray-500  hover:bg-sky-900 text-white' >                    
+            <button>CADASTRAR CATEGORIA</button>
+        </Link>
         </>
     )
 }

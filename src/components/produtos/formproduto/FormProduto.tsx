@@ -154,6 +154,23 @@ function FormProduto() {
                     />
                 </div>
 
+                 <div className="flex flex-col gap-2">
+                    <label htmlFor="estoque" className="font-medium">Estoque do Produto</label>
+                    <input
+                        value={
+                            produto.estoque === 0 || produto.estoque === undefined ? "" : produto.estoque
+                        }
+                        onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
+                        type="number"
+                        step=".01"
+                        placeholder="Estoque do Produto"
+                        name="estoque"
+                        id="estoque"
+                        required
+                        className="border-2 border-slate-700 rounded p-2 bg-white text-base focus:outline-none focus:ring-2 focus:ring-slate-500"
+                    />
+                </div>
+
                 <div className="flex flex-col gap-2">
                     <label htmlFor="foto" className="font-medium">Foto do Produto</label>
                     <input

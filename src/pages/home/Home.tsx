@@ -24,7 +24,7 @@ function Home() {
                         </p>
                         <div className="flex justify-around gap-4">
                           <Link to="/cadastrarproduto" 
-                          className="text-base border-2 border-gray-400 px-4 py-2 rounded-md hover:bg-white hover:text-black hover:border-gray-800">
+                          className="text-base border border-gray-500 px-4 py-2 rounded-md hover:bg-white hover:text-black hover:border-gray-800 hover:border-2">
                         Novo Produto
                         </Link>
                         <Link to="/produtos" 

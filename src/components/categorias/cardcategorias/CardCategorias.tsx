@@ -11,28 +11,32 @@ interface CardCategoriasProps {
 
 function CardCategorias({ categoria }: CardCategoriasProps) {
     return (
-        <div className='border flex flex-col rounded-sm overflow-hidden justify-between'>
+        <div className='border border-gray-400  flex flex-col rounded-lg overflow-hidden justify-between'>
 
-            <header className='py-2 px-6 bg-gray-800 text-white font-semibold text-2xl'>
+            <header className='px-4 py-2 bg-gray-800 text-white font-light text-md uppercase'>
                 Categoria
             </header>
 
-            <p className='p-8 text-2xl bg-gray-100 h-full'>
+            <p className='pt-6 text-2xl bg-gray-100 h-full font-bold text-center'>
                 {categoria.nome}
+            </p>
+
+            <p className='p-4 text-sm bg-gray-100 h-full text-center'>
+                {categoria.descricao}
             </p>
 
             <div className="flex text-gray-950">
 
                 <Link to={`/editarcategoria/${categoria.id}`}
-                    className='w-full font-semibold bg-gray-300 hover:bg-blue-900 hover:text-white
+                    className='w-full font-semibold bg-gray-300 hover:bg-sky-950 hover:text-white
                         flex items-center justify-center py-2'>
-                    <button>Editar</button>
+                    <button>EDITAR</button>
                 </Link>
 
                 <Link to={`/deletarCategoria/${categoria.id}`}
-                className=' bg-red-300 hover:bg-red-700 hover:text-white w-full 
-                    flex items-center justify-center font-semibold'>
-                    <button>Deletar</button>
+                className=' bg-orange-200 hover:bg-red-800 hover:text-white w-full 
+                    flex items-center justify-center font-semibold '>
+                    <button>DELETAR</button>
                 </Link>
             </div>
         </div>

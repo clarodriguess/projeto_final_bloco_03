@@ -96,6 +96,22 @@ function FormCategoria() {
                             onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
                         />
                     </div>
+
+                    <div className="flex flex-col gap-2 text-lg font-semibold"> 
+                        <label htmlFor="descricao">Descriçao:</label>
+                        <input
+                            type="text"
+                            placeholder="Descriçao da Categoria"
+                            id='descricao'
+                            name='descricao'
+                            className="p-2 text-base bg-white border-2 rounded border-zinc-600  md:text-lg font-normal"
+                            required
+                            value={categoria.descricao}
+                            onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
+                        />
+                    </div>
+
+
                     <button
                         className="flex justify-center w-full py-2 mx-auto text-base rounded text-slate-100 bg-slate-400 hover:bg-slate-800 md:w-1/2 md:text-lg"
                         type="submit"

@@ -24,8 +24,8 @@ function Navbar() {
                     
                     <div className='items-center hidden gap-4 py-4 md:flex '>
                         
-                        <Link to='/categorias' className='hover:underline'>Categorias</Link>
-                        <Link to='/cadastrarcategoria' className='hover:underline'>Cadastrar Categoria</Link>
+                        <Link to='/categorias' className='hover:underline uppercase'>Categorias</Link>
+                        {/* <Link to='/cadastrarcategoria' className='hover:underline'>Cadastrar Categoria</Link> */}
                         <UserIcon size={32} weight='light' />
                         <ShoppingCartIcon size={32} weight='light' />
                     </div>
