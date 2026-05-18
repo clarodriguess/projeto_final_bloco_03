@@ -1,8 +1,9 @@
+/* eslint-disable @typescript-eslint/no-unsafe-function-type */
 import axios from "axios";
 
 
 export const api = axios.create({
-    baseURL: "https://farmacia-nest.onrender.com"
+    baseURL: "https://pharmacy-ecommerce-api.onrender.com"
     
   })
 
